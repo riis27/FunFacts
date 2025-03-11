@@ -153,6 +153,7 @@ button:hover {
   object-fit: cover; 
   border-radius: 8px; 
   margin-top: 20px; 
+  filter: brightness(140%);
 }
 
 .fact-preview-container {
