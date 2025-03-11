@@ -16,7 +16,6 @@ body {
 }
 
 .App {
-  display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
@@ -84,6 +83,7 @@ body {
     object-fit: cover; 
     border-radius: 8px; 
     margin-top: 20px; 
+    filter: brightness(150%);
   }
 
 
@@ -106,6 +106,7 @@ h2 {
   margin-bottom: 1rem;
   font-weight: 600;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 p {
@@ -219,18 +220,15 @@ button:hover {
 
 .contact-container {
   margin: 40px;
-  max-width: 80vw;
+  max-width: 800px;
   padding: 30px;
   background-color: #ffffff;
-  display: block;
-  justify-content: center;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
   text-align: left; 
 }
 
 .contact-form {
-  display: flex;
   flex-direction: column;
   width: 90%;
   margin: 2rem auto;
@@ -238,6 +236,7 @@ button:hover {
 
 .form-group {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   margin-bottom: 1rem;
 }
@@ -272,6 +271,7 @@ textarea {
 .submit-button:hover {
   background-color: #2980b9;
 }
+
 
 /* Responsive adjustments */
 

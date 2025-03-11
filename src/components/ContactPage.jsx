@@ -17,6 +17,7 @@ function ContactPage() {
   return (
     <div className="contact-container">
       <h2>Contact Us</h2>
+      <p>For further questions or permission to use our content, please send us a message and we will respond within one business day. Thank you for visiting!</p>
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
           <label htmlFor="name">Name:</label>
