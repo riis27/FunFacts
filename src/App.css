@@ -25,10 +25,10 @@ body {
 /* Navbar Styling */
 .navbar {
   width: 100vw;
-  background: linear-gradient(135deg, #ad74df 0%, #0a199f 100%);
-  color: white;
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/hands.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,10 +93,19 @@ body {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-h1, h2 {
+h1 {
   color: #4a5568;
   margin-bottom: 1rem;
   font-weight: 600;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+h2 {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 p {
@@ -104,6 +113,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.homepage-caption {
+  font-size: 1.25rem;
+  text-align: center;
+}
 .recharts-responsive-container {
   margin: 2rem auto;
   width: 100% !important;

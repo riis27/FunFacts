@@ -1,21 +1,21 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './HomePage';
-import AboutPage from './AboutPage';
-import Fact1 from './Fact1';
-import Fact2 from './Fact2';
-import Fact3 from './Fact3';
-import Fact4 from './Fact4';
-import ContactPage from './ContactPage';
-import Navbar from './Navbar'; 
+import { BrowserRouter as BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import AboutPage from './components/AboutPage';
+import Fact1 from './components/Fact1';
+import Fact2 from './components/Fact2';
+import Fact3 from './components/Fact3';
+import Fact4 from './components/Fact4';
+import ContactPage from './components/ContactPage';
+import Navbar from './components/Navbar'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min'; 
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename="/FunFacts">
       <div className="App">
         <Navbar /> 
 
@@ -29,7 +29,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

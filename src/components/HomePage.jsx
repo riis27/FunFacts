@@ -11,7 +11,7 @@ function HomePage() {
   return (
     <div className="page-container">
       <h1>Investing in Women and Girls: A Catalyst for Economic Growth</h1>
-      <p>
+      <p className="homepage-caption">
         Investing in women and girls is not just a matter of equity; it's a strategic imperative for economic development. When women and girls are empowered, economies thrive. This website highlights key facts demonstrating the significant economic benefits of gender equality.
       </p>
 

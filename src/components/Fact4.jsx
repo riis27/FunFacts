@@ -18,7 +18,7 @@ function Fact4({ preview }) {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="Growth" fill="#8884d8" />
+          <Bar dataKey="Growth" fill="#de8450" />
         </BarChart>
       </div>
     );
