@@ -1,5 +1,6 @@
 /* General Styling */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -28,9 +29,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   box-sizing: border-box;
 }
 
@@ -38,9 +36,11 @@ body {
   font-size: 1.8rem;
   font-weight: bold;
   color: white;
-  display: flex; 
+  display: flex;
   align-items: left;
+  max-width: 80%; 
 }
+
 
 .nav-list {
   list-style: none;
@@ -74,17 +74,17 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: box-shadow 0.3s ease;
-  }
+}
 
-  .about-image {
-    width: 100%;
-    height: auto; 
-    display: block; 
-    object-fit: cover; 
-    border-radius: 8px; 
-    margin-top: 20px; 
-    filter: brightness(150%);
-  }
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 20px;
+  filter: brightness(150%);
+}
 
 
 
@@ -118,6 +118,7 @@ p {
   font-size: 1.25rem;
   text-align: center;
 }
+
 .recharts-responsive-container {
   margin: 2rem auto;
   width: 100% !important;
@@ -148,11 +149,11 @@ button:hover {
 
 .about-image {
   width: 100%;
-  height: auto; 
-  display: block; 
-  object-fit: cover; 
-  border-radius: 8px; 
-  margin-top: 20px; 
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 20px;
   filter: brightness(140%);
 }
 
@@ -225,8 +226,8 @@ button:hover {
   padding: 30px;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  text-align: left; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 .contact-form {
@@ -247,7 +248,289 @@ label {
   font-weight: 600;
 }
 
-input, textarea {
+input,
+textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+
+/* Responsive adjustments */
+
+/* General Styling */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f9f9fb;
+  background-size: contain;
+  width: 100vw;
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* Navbar Styling */
+.navbar {
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/hands.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: left;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0 1.5rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e0e0e0;
+}
+
+.page-container {
+  padding: 2rem;
+  max-width: 80vw;
+  display: block;
+  justify-content: center;
+  margin: 2rem auto;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 20px;
+  filter: brightness(150%);
+}
+
+
+
+/* Content Styling */
+.page-container:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+h2 {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+p {
+  color: #5a677d;
+  margin-bottom: 1.5rem;
+}
+
+.homepage-caption {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.recharts-responsive-container {
+  margin: 2rem auto;
+  width: 100% !important;
+  max-width: 800px;
+}
+
+.recharts-cartesian-grid line {
+  stroke: #e0e0e0;
+}
+
+.recharts-tooltip-item-name {
+  font-weight: 600;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 20px;
+  filter: brightness(140%);
+}
+
+.fact-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.fact-preview {
+  width: calc(50% - 2rem);
+  min-width: 300px;
+  margin: 1rem;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.fact-preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.fact-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chart-container.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button {
+  background-color: #3498db;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  font-weight: 600;
+  align-self: center;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.contact-container {
+  margin: 40px;
+  max-width: 800px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.contact-form {
+  flex-direction: column;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
   padding: 0.8rem;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -277,13 +560,17 @@ textarea {
 /* Responsive adjustments */
 
 /* Small Screens */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 1rem;
-  }
+@media (min-width: 344px) and (max-width: 767px) {
   .navbar-brand {
-    font-size: 1.5rem;
+    font-size: .9rem;
+    max-width: 60%;
   }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem; /* Adjust padding for smaller screens */
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+
   .page-container {
     padding: 1rem;
     max-width: 95vw;
@@ -294,6 +581,7 @@ textarea {
     display: flex;
     justify-content: center;
   }
+
   .fact-preview {
     width: 100%;
     min-width: auto;
@@ -306,13 +594,19 @@ textarea {
   .navbar {
     padding: 2rem;
   }
+
+  h1 {
+    font-size: 2.8rem;
+  }
   .navbar-brand {
     font-size: 1.9rem;
   }
+
   .page-container {
     padding: 2rem;
     max-width: 90vw;
   }
+
   .fact-preview {
     width: calc(50% - 2rem);
   }
